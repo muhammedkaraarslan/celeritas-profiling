@@ -1,0 +1,19 @@
+68.460329289
+{
+  "along-step": 54.48023807699999,
+  "optical-boundary-init": 6.6117556470000025
+}
+{
+  "const_mem": 0,
+  "heap_size": 8388608,
+  "local_mem": 128,
+  "max_blocks_per_cu": 2,
+  "max_threads_per_block": 256,
+  "max_warps_per_eu": 16,
+  "name": "along-step-propagate",
+  "num_regs": 128,
+  "occupancy": 0.25,
+  "print_buffer_size": 5242880,
+  "stack_size": 1024,
+  "threads_per_block": 256
+}
