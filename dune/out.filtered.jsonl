@@ -1,8 +1,8 @@
-49.120999261
+45.488647417
 "0.7.0-dev.443+profile-seth.0bbefce86"
 {
-  "along-step": 35.02338203700004,
-  "optical-boundary-init": 6.486554053000002
+  "along-step": 31.526450998000026,
+  "optical-boundary-init": 6.474115893000005
 }
 {
   "const_mem": 0,
