@@ -1,13 +1,13 @@
-50.907275764
-"0.7.0-dev.435+24f41ec27"
+51.770043256
+"0.7.0-dev.436+4d6bb807e"
 {
-  "along-step": 37.868117114999954,
-  "optical-boundary-init": 6.363531874000007
+  "along-step": 38.73501010399991,
+  "optical-boundary-init": 6.363838086
 }
 {
   "const_mem": 0,
   "heap_size": 8388608,
-  "local_mem": 176,
+  "local_mem": 216,
   "max_blocks_per_cu": 2,
   "max_threads_per_block": 256,
   "max_warps_per_eu": 16,
