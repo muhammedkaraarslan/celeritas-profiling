@@ -1,13 +1,13 @@
-50.712510145
+48.763713977
 "0.7.0-dev.441+profile-seth.c3aa2d1cb"
 {
-  "along-step": 36.95155164299993,
-  "optical-boundary-init": 6.4647614360000105
+  "along-step": 35.00384385499991,
+  "optical-boundary-init": 6.465568185999996
 }
 {
   "const_mem": 0,
   "heap_size": 8388608,
-  "local_mem": 304,
+  "local_mem": 176,
   "max_blocks_per_cu": 2,
   "max_threads_per_block": 256,
   "max_warps_per_eu": 16,
