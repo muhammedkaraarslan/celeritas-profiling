@@ -16,8 +16,8 @@
   "problem": {
     "capacity": {
       "generators": 1,
-      "primaries": 1,
-      "tracks": 1048576
+      "primaries": 1048576,
+      "tracks": 1024
     },
     "generator": {
       "_type": "primary",
@@ -38,14 +38,14 @@
     "model": {
       "geometry": "geometry/dune-celeritas-rice.gdml"
     },
-    "output_file": "out-short.json",
+    "output_file": "out-debug.json",
     "seed": 12345,
     "timers": {
       "action": true
     }
   },
   "system": {
-    "device": {},
+    "device": null,
     "environment": {}
   }
 }
