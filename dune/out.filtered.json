@@ -1,16 +1,16 @@
 {
-  "total": 39.776649663,
-  "version": "0.7.0-dev.439+ministack.813d53d42",
+  "total": 39.263386183,
+  "version": "0.7.0-dev.440+ministack.10162ed26",
   "actions": {
-    "along-step": 29.388869812999992,
-    "optical-boundary-init": 4.271173596000005,
-    "primary-generate": 3.7209464680000144
+    "along-step": 29.134636916999952,
+    "optical-boundary-init": 4.223347583000008,
+    "primary-generate": 3.528863717999977
   },
   "kernels": {
     "primary-generate": {
       "const_mem": 0,
       "heap_size": 8388608,
-      "local_mem": 144,
+      "local_mem": 112,
       "max_blocks_per_cu": 4,
       "max_threads_per_block": 256,
       "max_warps_per_eu": 32,
@@ -24,7 +24,7 @@
     "along-step-propagate": {
       "const_mem": 0,
       "heap_size": 8388608,
-      "local_mem": 176,
+      "local_mem": 144,
       "max_blocks_per_cu": 2,
       "max_threads_per_block": 256,
       "max_warps_per_eu": 16,
@@ -38,7 +38,7 @@
     "optical-boundary-init": {
       "const_mem": 0,
       "heap_size": 8388608,
-      "local_mem": 136,
+      "local_mem": 104,
       "max_blocks_per_cu": 4,
       "max_threads_per_block": 256,
       "max_warps_per_eu": 32,
@@ -52,7 +52,7 @@
     "optical-boundary-post": {
       "const_mem": 0,
       "heap_size": 8388608,
-      "local_mem": 104,
+      "local_mem": 72,
       "max_blocks_per_cu": 4,
       "max_threads_per_block": 256,
       "max_warps_per_eu": 32,
