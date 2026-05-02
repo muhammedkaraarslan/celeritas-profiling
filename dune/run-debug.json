@@ -1,0 +1,51 @@
+{
+  "geant_setup": {
+    "absorption": true,
+    "boundary": {
+      "enable": true
+    },
+    "mie_scattering": true,
+    "rayleigh_scattering": true,
+    "wavelength_shifting": {
+      "enable": false
+    },
+    "wavelength_shifting2": {
+      "enable": false
+    }
+  },
+  "problem": {
+    "capacity": {
+      "generators": 1,
+      "primaries": 1048576,
+      "tracks": 1024
+    },
+    "generator": {
+      "_type": "primary",
+      "primaries": 1048576,
+      "angle": {
+        "_type": "isotropic"
+      },
+      "energy": {
+        "_type": "normal",
+        "mean": 1e-5,
+        "stddev": 1e-6
+      },
+      "shape": {
+        "_type": "delta",
+        "value": [0, 0, 0]
+      }
+    },
+    "model": {
+      "geometry": "geometry/dune-celeritas-rice.gdml"
+    },
+    "output_file": "out-debug.json",
+    "seed": 12345,
+    "timers": {
+      "action": true
+    }
+  },
+  "system": {
+    "device": null,
+    "environment": {}
+  }
+}
