@@ -1,10 +1,10 @@
 {
-  "total": 39.451329213,
-  "version": "0.7.0-dev.433+develop.7c39d13e2",
+  "total": 39.776649663,
+  "version": "0.7.0-dev.439+ministack.813d53d42",
   "actions": {
-    "along-step": 29.48089713600002,
-    "optical-boundary-init": 3.869031936999995,
-    "primary-generate": 3.705740033000019
+    "along-step": 29.388869812999992,
+    "optical-boundary-init": 4.271173596000005,
+    "primary-generate": 3.7209464680000144
   },
   "kernels": {
     "primary-generate": {
@@ -38,7 +38,7 @@
     "optical-boundary-init": {
       "const_mem": 0,
       "heap_size": 8388608,
-      "local_mem": 144,
+      "local_mem": 136,
       "max_blocks_per_cu": 4,
       "max_threads_per_block": 256,
       "max_warps_per_eu": 32,
@@ -52,7 +52,7 @@
     "optical-boundary-post": {
       "const_mem": 0,
       "heap_size": 8388608,
-      "local_mem": 112,
+      "local_mem": 104,
       "max_blocks_per_cu": 4,
       "max_threads_per_block": 256,
       "max_warps_per_eu": 32,
