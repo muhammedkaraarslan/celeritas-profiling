@@ -9,6 +9,7 @@ export CUDA_VISIBLE_DEVICES=6
 set -x
 /scratch/s3j/build/celeritas-release-orange/bin/celer-optical \
   run.json
+jq . out.json > out.formatted.json && mv out.formatted.json out.json
 
 jq '{
   total: .result.time.total,
