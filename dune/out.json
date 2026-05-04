@@ -133,20 +133,20 @@
     },
     "time": {
       "actions": {
-        "absorption": 0.03916094900000046,
-        "along-step": 24.758941623999974,
-        "locate-vacancies": 0.13535997199999977,
-        "optical-boundary-init": 3.8130533469999994,
-        "optical-boundary-post": 0.1448422740000003,
-        "optical-discrete-select": 0.21686074799999921,
-        "optical-rayleigh": 0.5670999869999998,
-        "optical-surface-stepping": 0.7705162269999982,
-        "pre-step": 0.40903744199999964,
-        "primary-generate": 3.4962114550000103,
-        "tracking-cut": 0.037840589000000584
+        "absorption": 0.0410787200000004,
+        "along-step": 24.368983346999983,
+        "locate-vacancies": 0.14480204599999924,
+        "optical-boundary-init": 3.8148315240000006,
+        "optical-boundary-post": 0.1459776970000005,
+        "optical-discrete-select": 0.21848033899999963,
+        "optical-rayleigh": 0.5687251140000017,
+        "optical-surface-stepping": 0.773268285000001,
+        "pre-step": 0.4105766999999992,
+        "primary-generate": 3.504930939000021,
+        "tracking-cut": 0.03899954700000038
       },
-      "setup": 0.499314099,
-      "total": 34.44204283
+      "setup": 0.510958604,
+      "total": 34.082641358
     }
   },
   "system": {
@@ -178,7 +178,7 @@
           "covfie": "0.15.3"
         }
       },
-      "version": "0.7.0-dev.458+more-profiling.0abe5d4e1"
+      "version": "0.7.0-dev.461+more-profiling.9bd702093"
     },
     "device": {
       "async": true,
@@ -432,45 +432,45 @@
       {
         "_units": "kibi",
         "cpu_delta": 27648,
-        "cpu_hwm": 199708,
+        "cpu_hwm": 197636,
         "gpu_usage": 319360,
         "label": "GeantSetup.construct",
         "parent_index": 0
       },
       {
         "_units": "kibi",
-        "cpu_delta": 20480,
-        "cpu_hwm": 199708,
+        "cpu_delta": 19456,
+        "cpu_hwm": 197636,
         "gpu_usage": 319360,
         "label": "GeantSetup.initialize",
         "parent_index": 1
       },
       {
         "_units": "kibi",
-        "cpu_delta": 19456,
-        "cpu_hwm": 198684,
+        "cpu_delta": 18432,
+        "cpu_hwm": 196612,
         "gpu_usage": 319360,
         "label": "GeantGdmlLoader.load",
         "parent_index": 2
       },
       {
         "_units": "kibi",
-        "cpu_hwm": 198684,
+        "cpu_hwm": 196612,
         "gpu_usage": 319360,
         "label": "GeantGeoParams.construct",
         "parent_index": 2
       },
       {
         "_units": "kibi",
-        "cpu_hwm": 198684,
+        "cpu_hwm": 196612,
         "gpu_usage": 319360,
         "label": "GeantGeoParams.build_metadata",
         "parent_index": 4
       },
       {
         "_units": "kibi",
-        "cpu_delta": 6172,
-        "cpu_hwm": 211000,
+        "cpu_delta": 6144,
+        "cpu_hwm": 209924,
         "gpu_delta": 2048,
         "gpu_usage": 321408,
         "label": "setup::problem",
@@ -478,44 +478,43 @@
       },
       {
         "_units": "kibi",
-        "cpu_delta": 1024,
-        "cpu_hwm": 206876,
+        "cpu_hwm": 204804,
         "gpu_usage": 321408,
         "label": "orange.convert-geant",
         "parent_index": 6
       },
       {
         "_units": "kibi",
-        "cpu_delta": 3072,
-        "cpu_hwm": 209948,
+        "cpu_delta": 4096,
+        "cpu_hwm": 208900,
         "gpu_usage": 321408,
         "label": "orange.build_input",
         "parent_index": 6
       },
       {
         "_units": "kibi",
-        "cpu_hwm": 209948,
+        "cpu_hwm": 208900,
         "gpu_usage": 321408,
         "label": "orange.finalize_runtime",
         "parent_index": 6
       },
       {
         "_units": "kibi",
-        "cpu_hwm": 209948,
+        "cpu_hwm": 208900,
         "gpu_usage": 321408,
         "label": "MaterialParams.construct",
         "parent_index": 6
       },
       {
         "_units": "kibi",
-        "cpu_hwm": 209948,
+        "cpu_hwm": 208900,
         "gpu_usage": 321408,
         "label": "GeoMaterialParams.construct",
         "parent_index": 6
       },
       {
         "_units": "kibi",
-        "cpu_hwm": 211000,
+        "cpu_hwm": 208900,
         "gpu_usage": 321408,
         "label": "optical::CoreParams.construct",
         "parent_index": 6
