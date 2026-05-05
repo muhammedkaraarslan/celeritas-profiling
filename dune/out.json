@@ -130,20 +130,20 @@
     },
     "time": {
       "actions": {
-        "absorption": 0.03953007400000035,
-        "along-step": 29.53564119500007,
-        "locate-vacancies": 0.13839369799999984,
-        "optical-boundary-init": 3.873211015000004,
-        "optical-boundary-post": 0.14438150100000025,
-        "optical-discrete-select": 0.21635255499999964,
-        "optical-rayleigh": 0.5666772200000008,
-        "optical-surface-stepping": 0.7706599700000011,
-        "pre-step": 0.40826995399999894,
-        "primary-generate": 3.69591946299997,
-        "tracking-cut": 0.037810617000000345
+        "absorption": 0.039549319000000395,
+        "along-step": 29.389655959999942,
+        "locate-vacancies": 0.13586681699999972,
+        "optical-boundary-init": 3.815282988999999,
+        "optical-boundary-post": 0.14433688400000066,
+        "optical-discrete-select": 0.21713586399999943,
+        "optical-rayleigh": 0.5668375990000014,
+        "optical-surface-stepping": 0.770468717000001,
+        "pre-step": 0.4085424639999987,
+        "primary-generate": 3.4925924969999924,
+        "tracking-cut": 0.03771277700000032
       },
-      "setup": 0.511489477,
-      "total": 39.479263508
+      "setup": 0.535591196,
+      "total": 39.070315283
     }
   },
   "system": {
@@ -175,7 +175,7 @@
           "covfie": "0.15.3"
         }
       },
-      "version": "0.7.0-dev.435+develop.816c728bd"
+      "version": "0.7.0-dev.456+ministack.6b3a070d5"
     },
     "device": {
       "async": true,
@@ -228,7 +228,7 @@
       {
         "const_mem": 0,
         "heap_size": 8388608,
-        "local_mem": 144,
+        "local_mem": 112,
         "max_blocks_per_cu": 4,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 32,
@@ -256,7 +256,7 @@
       {
         "const_mem": 0,
         "heap_size": 8388608,
-        "local_mem": 176,
+        "local_mem": 144,
         "max_blocks_per_cu": 2,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 16,
@@ -326,7 +326,7 @@
       {
         "const_mem": 0,
         "heap_size": 8388608,
-        "local_mem": 144,
+        "local_mem": 112,
         "max_blocks_per_cu": 4,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 32,
@@ -396,7 +396,7 @@
       {
         "const_mem": 0,
         "heap_size": 8388608,
-        "local_mem": 112,
+        "local_mem": 80,
         "max_blocks_per_cu": 4,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 32,
@@ -428,8 +428,8 @@
       },
       {
         "_units": "kibi",
-        "cpu_delta": 27656,
-        "cpu_hwm": 198728,
+        "cpu_delta": 27648,
+        "cpu_hwm": 199724,
         "gpu_usage": 319360,
         "label": "GeantSetup.construct",
         "parent_index": 0
@@ -437,39 +437,37 @@
       {
         "_units": "kibi",
         "cpu_delta": 20480,
-        "cpu_hwm": 198728,
+        "cpu_hwm": 199724,
         "gpu_usage": 319360,
         "label": "GeantSetup.initialize",
         "parent_index": 1
       },
       {
         "_units": "kibi",
-        "cpu_delta": 18432,
-        "cpu_hwm": 197704,
+        "cpu_delta": 19456,
+        "cpu_hwm": 198700,
         "gpu_usage": 319360,
         "label": "GeantGdmlLoader.load",
         "parent_index": 2
       },
       {
         "_units": "kibi",
-        "cpu_delta": 1024,
-        "cpu_hwm": 198728,
+        "cpu_hwm": 198700,
         "gpu_usage": 319360,
         "label": "GeantGeoParams.construct",
         "parent_index": 2
       },
       {
         "_units": "kibi",
-        "cpu_delta": 1024,
-        "cpu_hwm": 198728,
+        "cpu_hwm": 198700,
         "gpu_usage": 319360,
         "label": "GeantGeoParams.build_metadata",
         "parent_index": 4
       },
       {
         "_units": "kibi",
-        "cpu_delta": 6152,
-        "cpu_hwm": 211036,
+        "cpu_delta": 7168,
+        "cpu_hwm": 212012,
         "gpu_delta": 2048,
         "gpu_usage": 321408,
         "label": "setup::problem",
@@ -477,8 +475,7 @@
       },
       {
         "_units": "kibi",
-        "cpu_delta": 1024,
-        "cpu_hwm": 206932,
+        "cpu_hwm": 206892,
         "gpu_usage": 321408,
         "label": "orange.convert-geant",
         "parent_index": 6
@@ -486,35 +483,35 @@
       {
         "_units": "kibi",
         "cpu_delta": 3072,
-        "cpu_hwm": 210004,
+        "cpu_hwm": 209964,
         "gpu_usage": 321408,
         "label": "orange.build_input",
         "parent_index": 6
       },
       {
         "_units": "kibi",
-        "cpu_hwm": 210004,
+        "cpu_hwm": 209964,
         "gpu_usage": 321408,
         "label": "orange.finalize_runtime",
         "parent_index": 6
       },
       {
         "_units": "kibi",
-        "cpu_hwm": 210004,
+        "cpu_hwm": 210988,
         "gpu_usage": 321408,
         "label": "MaterialParams.construct",
         "parent_index": 6
       },
       {
         "_units": "kibi",
-        "cpu_hwm": 210004,
+        "cpu_hwm": 210988,
         "gpu_usage": 321408,
         "label": "GeoMaterialParams.construct",
         "parent_index": 6
       },
       {
         "_units": "kibi",
-        "cpu_hwm": 211036,
+        "cpu_hwm": 210988,
         "gpu_usage": 321408,
         "label": "optical::CoreParams.construct",
         "parent_index": 6
