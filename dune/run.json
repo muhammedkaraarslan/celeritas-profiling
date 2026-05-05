@@ -4,14 +4,10 @@
     "boundary": {
       "enable": true
     },
-    "mie_scattering": true,
+    "mie_scattering": false,
     "rayleigh_scattering": true,
-    "wavelength_shifting": {
-      "enable": false
-    },
-    "wavelength_shifting2": {
-      "enable": false
-    }
+    "wavelength_shifting": null,
+    "wavelength_shifting2": null
   },
   "problem": {
     "capacity": {
