@@ -130,20 +130,20 @@
     },
     "time": {
       "actions": {
-        "absorption": 0.039319367000000376,
-        "along-step": 25.237491584000058,
-        "boundary-init": 3.8445301479999987,
-        "boundary-post": 0.14463226400000043,
-        "discrete-select": 0.21695647699999945,
-        "locate-vacancies": 0.13622341799999996,
-        "pre-step": 0.40869996399999936,
-        "primary-generate": 3.677469376000015,
-        "rayleigh": 0.567261535000001,
-        "surface-physics": 0.7706477180000004,
-        "tracking-cut": 0.03791294000000052
+        "absorption": 0.03944646700000049,
+        "along-step": 23.972463782999995,
+        "boundary-init": 3.8449138420000053,
+        "boundary-post": 0.1445023320000003,
+        "discrete-select": 0.21701899699999957,
+        "locate-vacancies": 0.13711258499999976,
+        "pre-step": 0.4088029429999998,
+        "primary-generate": 3.678708574999985,
+        "rayleigh": 0.5668559370000019,
+        "surface-physics": 0.7711532879999995,
+        "tracking-cut": 0.03785921300000051
       },
-      "setup": 0.533561638,
-      "total": 35.134089812
+      "setup": 0.506211841,
+      "total": 33.871850389
     }
   },
   "system": {
@@ -175,7 +175,7 @@
           "covfie": "0.15.3"
         }
       },
-      "version": "0.7.0-dev.449+more-profiling.9e083f5ef"
+      "version": "0.7.0-dev.450+more-profiling.ba0cb2589"
     },
     "device": {
       "async": true,
