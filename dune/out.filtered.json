@@ -1,10 +1,10 @@
 {
-  "total": 35.148824764,
-  "version": "0.7.0-dev.448+more-profiling.e9ca16fb8",
+  "total": 35.134089812,
+  "version": "0.7.0-dev.449+more-profiling.9e083f5ef",
   "actions": {
-    "along-step": 25.24646360200001,
-    "boundary-init": 3.8456186409999913,
-    "primary-generate": 3.678001217999982
+    "along-step": 25.237491584000058,
+    "boundary-init": 3.8445301479999987,
+    "primary-generate": 3.677469376000015
   },
   "kernels": {
     "primary-generate": {
