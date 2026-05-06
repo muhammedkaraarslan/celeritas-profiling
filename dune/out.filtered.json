@@ -1,10 +1,67 @@
 {
-  "total": 38.572643898,
-  "version": "0.7.0-dev.438+develop.4d75e0fe9",
+  "total": 38.567227267,
+  "version": "0.7.0-dev.441+nvtx-kernels.3fce53cf0",
   "actions": {
-    "along-step": 28.667049468000005,
-    "boundary-init": 3.843799185999999,
-    "primary-generate": 3.6766703899999786
+    "along-step": 28.666660727000057,
+    "boundary-init": 3.8442799619999986,
+    "primary-generate": 3.6771605099999913
   },
-  "kernels": {}
+  "kernels": {
+    "primary-generate": {
+      "const_mem": 0,
+      "heap_size": 8388608,
+      "local_mem": 144,
+      "max_blocks_per_cu": 4,
+      "max_threads_per_block": 256,
+      "max_warps_per_eu": 32,
+      "name": "primary-generate",
+      "num_regs": 64,
+      "occupancy": 0.5,
+      "print_buffer_size": 5242880,
+      "stack_size": 1024,
+      "threads_per_block": 256
+    },
+    "along-step-propagate": {
+      "const_mem": 0,
+      "heap_size": 8388608,
+      "local_mem": 176,
+      "max_blocks_per_cu": 2,
+      "max_threads_per_block": 256,
+      "max_warps_per_eu": 16,
+      "name": "along-step-propagate",
+      "num_regs": 128,
+      "occupancy": 0.25,
+      "print_buffer_size": 5242880,
+      "stack_size": 1024,
+      "threads_per_block": 256
+    },
+    "boundary-init": {
+      "const_mem": 0,
+      "heap_size": 8388608,
+      "local_mem": 144,
+      "max_blocks_per_cu": 4,
+      "max_threads_per_block": 256,
+      "max_warps_per_eu": 32,
+      "name": "boundary-init",
+      "num_regs": 64,
+      "occupancy": 0.5,
+      "print_buffer_size": 5242880,
+      "stack_size": 1024,
+      "threads_per_block": 256
+    },
+    "boundary-post": {
+      "const_mem": 0,
+      "heap_size": 8388608,
+      "local_mem": 112,
+      "max_blocks_per_cu": 4,
+      "max_threads_per_block": 256,
+      "max_warps_per_eu": 32,
+      "name": "boundary-post",
+      "num_regs": 64,
+      "occupancy": 0.5,
+      "print_buffer_size": 5242880,
+      "stack_size": 1024,
+      "threads_per_block": 256
+    }
+  }
 }
