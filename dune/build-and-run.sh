@@ -19,6 +19,7 @@ MSG="$(
     exit 1
   fi
   git log -1 --format='%s%n%nSource commit %h (%cd)'
+  git log -1 --format='Parent commit %h (%cd): %s' HEAD^
 )"
 
 # Rebuild executable with updated cmake/git metadata

@@ -1,10 +1,10 @@
 {
-  "total": 39.070315283,
-  "version": "0.7.0-dev.456+ministack.6b3a070d5",
+  "total": 39.570153597,
+  "version": "0.7.0-dev.458+ministack.cec9fbe62",
   "actions": {
-    "along-step": 29.389655959999942,
-    "optical-boundary-init": 3.815282988999999,
-    "primary-generate": 3.4925924969999924
+    "along-step": 29.880966090999966,
+    "optical-boundary-init": 3.7878502949999984,
+    "primary-generate": 3.5223072369999864
   },
   "kernels": {
     "primary-generate": {
