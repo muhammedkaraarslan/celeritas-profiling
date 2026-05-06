@@ -85,7 +85,7 @@
         "interact by optical absorption",
         "interact by optical Rayleigh",
         "Initialize optical boundary crossing action",
-        "step through optical surface actions",
+        "apply optical surface physics",
         "Finalize optical boundary crossing action",
         "update beginning-of-step state",
         "move to interaction or boundary",
@@ -94,12 +94,12 @@
         "generate optical photon primaries"
       ],
       "label": [
-        "optical-discrete-select",
+        "discrete-select",
         "absorption",
-        "optical-rayleigh",
-        "optical-boundary-init",
-        "optical-surface-stepping",
-        "optical-boundary-post",
+        "rayleigh",
+        "boundary-init",
+        "surface-physics",
+        "boundary-post",
         "pre-step",
         "along-step",
         "tracking-cut",
@@ -130,20 +130,20 @@
     },
     "time": {
       "actions": {
-        "absorption": 0.04176764800000062,
-        "along-step": 28.67059849100001,
-        "locate-vacancies": 0.15725474799999944,
-        "optical-boundary-init": 3.846339495,
-        "optical-boundary-post": 0.14623059900000046,
-        "optical-discrete-select": 0.21963266199999906,
-        "optical-rayleigh": 0.5685887800000008,
-        "optical-surface-stepping": 0.772567332999999,
-        "pre-step": 0.4104924169999992,
-        "primary-generate": 3.6913099150000153,
-        "tracking-cut": 0.03881146200000054
+        "absorption": 0.03960325400000045,
+        "along-step": 28.667049468000005,
+        "boundary-init": 3.843799185999999,
+        "boundary-post": 0.1449105000000008,
+        "discrete-select": 0.21704933899999915,
+        "locate-vacancies": 0.14284272800000022,
+        "pre-step": 0.4090716489999999,
+        "primary-generate": 3.6766703899999786,
+        "rayleigh": 0.567253045000003,
+        "surface-physics": 0.771109042000001,
+        "tracking-cut": 0.03793069900000047
       },
-      "setup": 0.511514596,
-      "total": 38.615102337
+      "setup": 0.663529728,
+      "total": 38.572643898
     }
   },
   "system": {
@@ -175,7 +175,7 @@
           "covfie": "0.15.3"
         }
       },
-      "version": "0.7.0-dev.463+ministack.58436ced6"
+      "version": "0.7.0-dev.438+develop.4d75e0fe9"
     },
     "device": {
       "async": true,
@@ -210,7 +210,7 @@
       "CELER_DEVICE_ASYNC": "1",
       "CELER_DISABLE_DEVICE": "",
       "CELER_DISABLE_REDIRECT": "0",
-      "CELER_ENABLE_PROFILING": "0",
+      "CELER_ENABLE_PROFILING": "1",
       "CELER_LOG": "info",
       "CELER_LOG_LOCAL": "info",
       "CELER_MEMPOOL_RELEASE_THRESHOLD": "",
@@ -232,7 +232,7 @@
         "max_blocks_per_cu": 4,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 32,
-        "name": "primary-generate",
+        "name": "",
         "num_regs": 64,
         "occupancy": 0.5,
         "print_buffer_size": 5242880,
@@ -246,7 +246,7 @@
         "max_blocks_per_cu": 5,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 40,
-        "name": "pre-step",
+        "name": "",
         "num_regs": 48,
         "occupancy": 0.625,
         "print_buffer_size": 5242880,
@@ -260,7 +260,7 @@
         "max_blocks_per_cu": 2,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 16,
-        "name": "along-step-propagate",
+        "name": "",
         "num_regs": 128,
         "occupancy": 0.25,
         "print_buffer_size": 5242880,
@@ -274,7 +274,7 @@
         "max_blocks_per_cu": 4,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 32,
-        "name": "along-step",
+        "name": "",
         "num_regs": 52,
         "occupancy": 0.5,
         "print_buffer_size": 5242880,
@@ -288,7 +288,7 @@
         "max_blocks_per_cu": 5,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 40,
-        "name": "optical-discrete-select",
+        "name": "",
         "num_regs": 47,
         "occupancy": 0.625,
         "print_buffer_size": 5242880,
@@ -302,7 +302,7 @@
         "max_blocks_per_cu": 8,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 64,
-        "name": "absorption",
+        "name": "",
         "num_regs": 12,
         "occupancy": 1.0,
         "print_buffer_size": 5242880,
@@ -316,7 +316,7 @@
         "max_blocks_per_cu": 5,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 40,
-        "name": "optical-rayleigh",
+        "name": "",
         "num_regs": 48,
         "occupancy": 0.625,
         "print_buffer_size": 5242880,
@@ -330,7 +330,7 @@
         "max_blocks_per_cu": 4,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 32,
-        "name": "optical-boundary-init",
+        "name": "",
         "num_regs": 64,
         "occupancy": 0.5,
         "print_buffer_size": 5242880,
@@ -344,7 +344,7 @@
         "max_blocks_per_cu": 8,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 64,
-        "name": "roughness-polished",
+        "name": "",
         "num_regs": 24,
         "occupancy": 1.0,
         "print_buffer_size": 5242880,
@@ -358,7 +358,7 @@
         "max_blocks_per_cu": 4,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 32,
-        "name": "reflectivity-grid",
+        "name": "",
         "num_regs": 54,
         "occupancy": 0.5,
         "print_buffer_size": 5242880,
@@ -372,7 +372,7 @@
         "max_blocks_per_cu": 8,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 64,
-        "name": "reflectivity-fresnel",
+        "name": "",
         "num_regs": 22,
         "occupancy": 1.0,
         "print_buffer_size": 5242880,
@@ -386,7 +386,7 @@
         "max_blocks_per_cu": 3,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 24,
-        "name": "interaction-dielectric",
+        "name": "",
         "num_regs": 74,
         "occupancy": 0.375,
         "print_buffer_size": 5242880,
@@ -400,7 +400,7 @@
         "max_blocks_per_cu": 4,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 32,
-        "name": "optical-boundary-post",
+        "name": "",
         "num_regs": 64,
         "occupancy": 0.5,
         "print_buffer_size": 5242880,
@@ -414,107 +414,12 @@
         "max_blocks_per_cu": 8,
         "max_threads_per_block": 256,
         "max_warps_per_eu": 64,
-        "name": "tracking-cut",
+        "name": "",
         "num_regs": 12,
         "occupancy": 1.0,
         "print_buffer_size": 5242880,
         "stack_size": 1024,
         "threads_per_block": 256
-      }
-    ],
-    "memory": [
-      {
-        "label": "celer-optical.run"
-      },
-      {
-        "_units": "kibi",
-        "cpu_delta": 27648,
-        "cpu_hwm": 199680,
-        "gpu_usage": 319360,
-        "label": "GeantSetup.construct",
-        "parent_index": 0
-      },
-      {
-        "_units": "kibi",
-        "cpu_delta": 20480,
-        "cpu_hwm": 199680,
-        "gpu_usage": 319360,
-        "label": "GeantSetup.initialize",
-        "parent_index": 1
-      },
-      {
-        "_units": "kibi",
-        "cpu_delta": 19456,
-        "cpu_hwm": 198656,
-        "gpu_usage": 319360,
-        "label": "GeantGdmlLoader.load",
-        "parent_index": 2
-      },
-      {
-        "_units": "kibi",
-        "cpu_hwm": 198656,
-        "gpu_usage": 319360,
-        "label": "GeantGeoParams.construct",
-        "parent_index": 2
-      },
-      {
-        "_units": "kibi",
-        "cpu_hwm": 198656,
-        "gpu_usage": 319360,
-        "label": "GeantGeoParams.build_metadata",
-        "parent_index": 4
-      },
-      {
-        "_units": "kibi",
-        "cpu_delta": 6144,
-        "cpu_hwm": 211980,
-        "gpu_delta": 2048,
-        "gpu_usage": 321408,
-        "label": "setup::problem",
-        "parent_index": 0
-      },
-      {
-        "_units": "kibi",
-        "cpu_hwm": 206860,
-        "gpu_usage": 321408,
-        "label": "orange.convert-geant",
-        "parent_index": 6
-      },
-      {
-        "_units": "kibi",
-        "cpu_delta": 4096,
-        "cpu_hwm": 210956,
-        "gpu_usage": 321408,
-        "label": "orange.build_input",
-        "parent_index": 6
-      },
-      {
-        "_units": "kibi",
-        "cpu_hwm": 210956,
-        "gpu_usage": 321408,
-        "label": "orange.finalize_runtime",
-        "parent_index": 6
-      },
-      {
-        "_units": "kibi",
-        "cpu_hwm": 210956,
-        "gpu_usage": 321408,
-        "label": "MaterialParams.construct",
-        "parent_index": 6
-      },
-      {
-        "_units": "kibi",
-        "cpu_hwm": 210956,
-        "gpu_usage": 321408,
-        "label": "GeoMaterialParams.construct",
-        "parent_index": 6
-      },
-      {
-        "_units": "kibi",
-        "cpu_hwm": 211980,
-        "gpu_usage": 321408,
-        "label": "optical::CoreParams.construct",
-        "parent_index": 6
       }
     ]
   }
