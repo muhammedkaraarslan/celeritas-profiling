@@ -1,8 +1,8 @@
 {
-  "total": 4.20643203,
+  "total": 4.144355264,
   "version": "0.7.0-dev.449+separating-axis.70554c919",
   "actions": {
-    "along-step": 1.641586425999999,
-    "primary-generate": 0.7163954249999995
+    "along-step": 1.6224325610000006,
+    "primary-generate": 0.6869992980000007
   }
 }
