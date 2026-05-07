@@ -1,9 +1,8 @@
 {
-  "total": 7.959241348,
-  "version": "0.7.0-dev.405+ef6495bbc",
+  "total": 4.20643203,
+  "version": "0.7.0-dev.449+separating-axis.70554c919",
   "actions": {
-    "along-step": 4.591646062999997,
-    "optical-boundary-init": 0.9393524119999999,
-    "primary-generate": 0.8763158259999999
+    "along-step": 1.641586425999999,
+    "primary-generate": 0.7163954249999995
   }
 }
