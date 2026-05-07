@@ -130,20 +130,20 @@
     },
     "time": {
       "actions": {
-        "absorption": 0.03926544000000041,
-        "along-step": 23.97609047600005,
-        "boundary-init": 3.8458453149999934,
-        "boundary-post": 0.14483800100000005,
-        "discrete-select": 0.21701682299999908,
-        "locate-vacancies": 0.13751892699999999,
-        "pre-step": 0.4083980830000005,
-        "primary-generate": 3.674809880000018,
-        "rayleigh": 0.5670610560000008,
-        "surface-physics": 0.7710197760000014,
-        "tracking-cut": 0.037851205000000374
+        "absorption": 0.03966791700000044,
+        "along-step": 23.968744928000067,
+        "boundary-init": 3.8445972070000036,
+        "boundary-post": 0.14467646600000053,
+        "discrete-select": 0.21782727099999954,
+        "locate-vacancies": 0.13794745400000008,
+        "pre-step": 0.4090161979999989,
+        "primary-generate": 3.678882526999982,
+        "rayleigh": 0.5671891620000014,
+        "surface-physics": 0.7715220199999996,
+        "tracking-cut": 0.03792725600000034
       },
-      "setup": 0.512217134,
-      "total": 33.873408111
+      "setup": 0.495269483,
+      "total": 33.871228195
     }
   },
   "system": {
