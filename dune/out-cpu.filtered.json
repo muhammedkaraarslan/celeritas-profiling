@@ -1,0 +1,9 @@
+{
+  "total": 7.959241348,
+  "version": "0.7.0-dev.405+ef6495bbc",
+  "actions": {
+    "along-step": 4.591646062999997,
+    "optical-boundary-init": 0.9393524119999999,
+    "primary-generate": 0.8763158259999999
+  }
+}

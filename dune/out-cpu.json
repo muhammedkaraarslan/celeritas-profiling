@@ -1,0 +1,280 @@
+{
+  "input": {
+    "_format": "optical-standalone-input",
+    "_version": "0.7.0",
+    "geant_setup": {
+      "_format": "geant4-optical-physics",
+      "_version": "0.7.0",
+      "absorption": true,
+      "boundary": {
+        "invoke_sd": false
+      },
+      "cherenkov": {
+        "max_beta_change": 10.0,
+        "max_photons": 100,
+        "stack_photons": true,
+        "track_secondaries_first": true
+      },
+      "mie_scattering": false,
+      "rayleigh_scattering": true,
+      "scintillation": {
+        "by_particle_type": false,
+        "finite_rise_time": false,
+        "stack_photons": true,
+        "track_info": false,
+        "track_secondaries_first": true
+      },
+      "verbose": false,
+      "wavelength_shifting": null,
+      "wavelength_shifting2": null
+    },
+    "problem": {
+      "capacity": {
+        "generators": 1,
+        "primaries": 1,
+        "tracks": 1048576
+      },
+      "generator": {
+        "_type": "primary",
+        "angle": {
+          "_type": "isotropic"
+        },
+        "energy": {
+          "_type": "normal",
+          "mean": 0.00001,
+          "stddev": 0.000001
+        },
+        "primaries": 1048576,
+        "shape": {
+          "_type": "delta",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "limits": {
+        "step_iters": 4294967295,
+        "steps": 4294967295
+      },
+      "model": {
+        "geometry": "geometry/dune-celeritas-rice.gdml"
+      },
+      "output_file": "out-cpu.json",
+      "perfetto_file": null,
+      "seed": 12345,
+      "timers": {
+        "action": true,
+        "step": false
+      }
+    },
+    "system": {
+      "device": null,
+      "environment": {
+        "CELER_DISABLE_DEVICE": "1"
+      }
+    }
+  },
+  "internal": {
+    "optical-actions": {
+      "description": [
+        "select a discrete optical interaction",
+        "interact by optical absorption",
+        "interact by optical Rayleigh",
+        "Initialize optical boundary crossing action",
+        "step through optical surface actions",
+        "Finalize optical boundary crossing action",
+        "update beginning-of-step state",
+        "move to interaction or boundary",
+        "kill a track and deposit its energy",
+        "locate vacant track states",
+        "generate optical photon primaries"
+      ],
+      "label": [
+        "optical-discrete-select",
+        "absorption",
+        "optical-rayleigh",
+        "optical-boundary-init",
+        "optical-surface-stepping",
+        "optical-boundary-post",
+        "pre-step",
+        "along-step",
+        "tracking-cut",
+        "locate-vacancies",
+        "primary-generate"
+      ]
+    },
+    "optical-sizes": {
+      "generators": 1,
+      "streams": 1,
+      "tracks": 1048576
+    }
+  },
+  "result": {
+    "counters": {
+      "flushes": 1,
+      "generators": [
+        {
+          "buffer_size": 0,
+          "num_generated": 1048576,
+          "num_pending": 0
+        }
+      ],
+      "num_cut": 0,
+      "num_errored": 0,
+      "step_iters": 147,
+      "steps": 1799028
+    },
+    "time": {
+      "actions": {
+        "absorption": 0.085812628,
+        "along-step": 4.591646062999997,
+        "locate-vacancies": 0.05630020600000001,
+        "optical-boundary-init": 0.9393524119999999,
+        "optical-boundary-post": 0.14928747399999998,
+        "optical-discrete-select": 0.17973453500000003,
+        "optical-rayleigh": 0.21662506599999992,
+        "optical-surface-stepping": 0.40136167,
+        "pre-step": 0.37375173399999984,
+        "primary-generate": 0.8763158259999999,
+        "tracking-cut": 0.08569467200000003
+      },
+      "setup": 0.615078176,
+      "total": 7.959241348
+    }
+  },
+  "system": {
+    "build": {
+      "config": {
+        "build_type": "release,shared",
+        "constants": "CODATA 2018",
+        "core_geo": "ORANGE",
+        "core_rng": "xorwow",
+        "debug": [],
+        "geant4": "global-dynamic,multithreaded,shared,gdml",
+        "gpu_architectures": "70",
+        "hostname": "milan2",
+        "openmp": "disabled",
+        "real_type": "double",
+        "units": "CGS",
+        "use": [
+          "covfie",
+          "cuda",
+          "geant4",
+          "hepmc3"
+        ],
+        "versions": {
+          "CLHEP": "2.4.7.2",
+          "CUDA": "12.9.86",
+          "Geant4": "11.3.2",
+          "HepMC3": "3.03.01",
+          "Thrust": "2.0.1.0",
+          "covfie": "0.15.3"
+        }
+      },
+      "version": "0.7.0-dev.405+ef6495bbc"
+    },
+    "device": null,
+    "environ": {
+      "CELER_COLOR": "1",
+      "CELER_DISABLE_DEVICE": "1",
+      "CELER_DISABLE_REDIRECT": "0",
+      "CELER_ENABLE_PROFILING": "0",
+      "CELER_LOG": "info",
+      "CELER_LOG_LOCAL": "info",
+      "G4ORG_OPTIONS": "",
+      "G4_GEO_VERBOSITY": "",
+      "NO_COLOR": "",
+      "ORANGE_BIH_DEPTH_LIMIT": "",
+      "ORANGE_BIH_MAX_LEAF_SIZE": "",
+      "ORANGE_BIH_PART_CANDS": "",
+      "ORANGE_FORCE_INPUT": "",
+      "ORANGE_MAX_FACE_INTERSECT": ""
+    },
+    "kernels": [],
+    "memory": [
+      {
+        "label": "celer-optical.run"
+      },
+      {
+        "_units": "kibi",
+        "cpu_delta": 26624,
+        "cpu_hwm": 58376,
+        "label": "GeantSetup.construct",
+        "parent_index": 0
+      },
+      {
+        "_units": "kibi",
+        "cpu_delta": 19456,
+        "cpu_hwm": 58376,
+        "label": "GeantSetup.initialize",
+        "parent_index": 1
+      },
+      {
+        "_units": "kibi",
+        "cpu_delta": 19456,
+        "cpu_hwm": 58376,
+        "label": "GeantGdmlLoader.load",
+        "parent_index": 2
+      },
+      {
+        "_units": "kibi",
+        "cpu_hwm": 58376,
+        "label": "GeantGeoParams.construct",
+        "parent_index": 2
+      },
+      {
+        "_units": "kibi",
+        "cpu_hwm": 58376,
+        "label": "GeantGeoParams.build_metadata",
+        "parent_index": 4
+      },
+      {
+        "_units": "kibi",
+        "cpu_delta": 6156,
+        "cpu_hwm": 72268,
+        "label": "setup::problem",
+        "parent_index": 0
+      },
+      {
+        "_units": "kibi",
+        "cpu_delta": 1024,
+        "cpu_hwm": 67136,
+        "label": "orange.convert-geant",
+        "parent_index": 6
+      },
+      {
+        "_units": "kibi",
+        "cpu_delta": 4108,
+        "cpu_hwm": 71244,
+        "label": "orange.build_input",
+        "parent_index": 6
+      },
+      {
+        "_units": "kibi",
+        "cpu_hwm": 71244,
+        "label": "orange.finalize_runtime",
+        "parent_index": 6
+      },
+      {
+        "_units": "kibi",
+        "cpu_hwm": 71244,
+        "label": "MaterialParams.construct",
+        "parent_index": 6
+      },
+      {
+        "_units": "kibi",
+        "cpu_hwm": 71244,
+        "label": "GeoMaterialParams.construct",
+        "parent_index": 6
+      },
+      {
+        "_units": "kibi",
+        "cpu_hwm": 72268,
+        "label": "optical::CoreParams.construct",
+        "parent_index": 6
+      }
+    ]
+  }
+}
